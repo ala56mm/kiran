@@ -1,0 +1,2446 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*:::6 steps for css.:::*/
+/*:::step-1:parent container.:::*/
+/*:::step-2:componet container.:::*/
+/*:::step-3:componet.:::*/
+/*:::step-4:row.:::*/
+/*:::step-5:column.:::*/
+/*:::step-6:content container.:::*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    /*border 1px soild red;*/
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 0rem;
+}
+
+body {
+    background-color: #f8f2f4;
+    line-height: 1.5;
+    /* webkit-font-smoothing:antialiased; */
+    font-family: "Hind", sans-serif;
+    font-optical-sizing: auto;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primarycolor: #ffc107;
+    --secondaryColor: #343a40;
+    --darkColor: black;
+    --lightColor: white;
+    --regularFont: 1.4rem;
+    --headingFont: 2rem;
+    --ffPrimary: "Hind", sans-serif;
+    --ffsecondary: "Alegreya Sans", sans-serif;
+    --gradientcolor: linear-gradient(#ffc107 #f5e2a8);
+}
+
+.align {
+    max-width: 1500px;
+    margin: auto;
+}
+
+.componentSpacing {
+    padding: 3rem 0rem;
+}
+
+.minipad {
+    padding: 1rem;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 0rem 2rem;
+}
+
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dflex-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.dflex-col-left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+}
+
+/*:::parent containercode starts here.:::*/
+header {
+    width: 100% !important;
+    height: auto;
+}
+
+main {
+    width: 100% !important;
+    height: auto;
+}
+
+footer {
+    width: 100% !important;
+    height: auto;
+}
+
+/*:::navBar code.:::*/
+/*:::6 steps for css.:::*/
+/*:::step-1:parent container.:::*/
+/*:::step-2:componet container.:::*/
+/*:::step-3:componet.:::*/
+/*:::step-4:row.:::*/
+/*:::step-5:column.:::*/
+/*:::step-6:content container.:::*/
+
+
+/*:::step-1:parent container.:::*/
+header {}
+
+/*:::step-1:already styled in style.css.:::*/
+
+/*:::step-2:componet container.:::*/
+.navContainer {
+    /* background-color: antiquewhite; */
+    /* background-color: black; */
+}
+
+/*:::step-3:componet.:::*/
+.navBar {
+    /* background-color: antiquewhite; */
+}
+
+/*:::step-4: row.:::*/
+.navBody {
+    /* background-color: antiquewhite; */
+
+}
+
+/*:::step-5: column1.:::*/
+.logoBlock {
+    /* background-color: antiquewhite; */
+}
+
+/*:::step-6:content container.:::*/
+.firstlogo {
+    /* background-color: aqua; */
+}
+
+/* .logoimg{
+    width: 4rem;;
+    height: auto;
+    aspect-ratio: 1/1;   
+} */
+.secondlogo {
+    /* background-color: azure; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5.39rem;
+    margin-top: -.9rem;
+}
+
+.logoImg {
+    width: auto;
+    height: 5.5rem;
+}
+
+/*:::step-5:1row-2column.:::*/
+.linkBlock {
+    /* background-color: black; */
+    margin-right: 4rem;
+}
+
+/*:::step-6:content container.:::*/
+.links {
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    /* gap: 4.3rem; */
+
+}
+
+.links li {
+    list-style-type: none;
+}
+
+.links i {
+    font-size: .9rem;
+}
+
+.wedo {
+    gap: .3rem;
+    display: flex;
+    align-items: center;
+}
+
+.links li a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #ffffff;
+    font-size: 1.61rem;
+    font-weight: 500;
+}
+
+.links li a:hover {
+    text-decoration: underline;
+
+}
+
+.links li a i:hover {
+    text-decoration: underline;
+}
+
+.active {
+    text-decoration: underline !important;
+    text-underline-offset: .5rem;
+
+}
+/*:::navBar code.:::*/
+
+/*:::headerSection code.:::*/
+/*:::6 steps for css.:::*/
+/*:::step-1:parent container.:::*/
+/*:::step-2:componet container.:::*/
+/*:::step-3:componet.:::*/
+/*:::step-4:row.:::*/
+/*:::step-5:column.:::*/
+/*:::step-6:content container.:::*/
+
+
+/*:::step-1:parent container.:::*/
+header {
+    /* background-color: black; */
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+}
+header video {
+    position: absolute;
+    top: 39.4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    background: cover;
+    z-index: -1;
+  }
+
+/*:::step-1:already styled in style.css.:::*/
+
+/*:::step-2:componet container.:::*/
+.heroContainer {
+    /* background-color: antiquewhite; */
+}
+
+/*:::step-3:componet.:::*/
+
+.heroSection {
+    /* background-color: antiquewhite; */
+}
+
+/*:::step-4:1-row.:::*/
+.heroBody {
+    /* background-color: antiquewhite; */
+
+}
+
+/*:::step-5:1row-1column.:::*/
+.welcomeBlock {
+    /* background-color: antiquewhite; */
+      gap: 5rem;
+      margin-top: -25.2rem;
+      margin-left: 14.7rem;
+}
+
+/*:::step-6:content container.:::*/
+/* .videoBg{
+  min-height: 2rem;
+} */
+
+.video {
+  /* object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip; */
+}
+
+.video source {
+    /* background-color: aqua; */
+}
+
+.welImg {
+    /* background-color: aqua; */
+    animation: spin 10s infinite linear;
+  }
+  @keyframes spin {
+    50% {
+      rotate: 360deg;
+    }
+    100%(
+      rotate: -360deg;
+    )
+  }
+
+
+.welimg {
+    /* background-color: aqua; */
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+
+.welcometxt {
+    /* background-color: aqua; */
+}
+
+.welcometxt h1 {
+    /* background-color: aqua; */
+    font-size: 4rem;
+    color: #48c5ff;
+    font-family: "Alegreya Sans", sans-serif;
+    font-style: italic;
+    line-height: 4rem;
+    font-weight: 500;
+}
+
+/*:::step-5:row-2column.:::*/
+.heroImgBlock {
+    /* background-color: black; */
+    margin-left: -33rem;
+    margin-top:-1.5rem ;
+}
+
+/*:::step-6:content container.:::*/
+.heroImg {
+
+    /* background-color: black; */
+}
+
+.heroImg img{
+  /* overflow-clip-margin: content-box;
+  overflow: hidden;
+  object-fit: cover; */
+  aspect-ratio: 3/5;
+  /* background-color: black; */
+}
+.location
+{
+   margin-top: -22rem;
+}
+
+.location img{
+    /* background-color: black; */
+    transform: translate(200%);
+    animation: jump 2s infinite ease-in-out;
+    aspect-ratio: 2/3;
+    
+}
+@keyframes jump {
+    0%, 100% {
+      transform: translate(-100%, 0); /* Initial and final position */
+    }
+    50% {
+      transform: translate(-100%, 40px); /* Move 200px down */
+    }
+  }
+.locationImg {
+     /* background-color: black; */
+   
+}
+/*:::headerSection code.:::*/
+
+/*:::best company code.:::*/
+/*:::6 steps for css.:::*/
+/*:::step-1:parent container.:::*/
+/*:::step-2:componet container.:::*/
+/*:::step-3:componet.:::*/
+/*:::step-4:row.:::*/
+/*:::step-5:column.:::*/
+/*:::step-6:content container.:::*/
+
+
+/*:::step-1:parent container.:::*/
+main {
+    /* background-color: black; */
+
+}
+
+/*:::step-1:already styled in style.css.:::*/
+
+/*:::step-2:componet container.:::*/
+.bestCompanyContainer {
+    background-color: #ffffff;
+}
+
+/*:::step-3:componet.:::*/
+
+.bestCompany {
+    /* background-color: antiquewhite; */
+}
+
+/*:::step-4:1-row.:::*/
+.topBody {
+    /* background-color: antiquewhite; */
+
+}
+
+/*:::step-5:1row-1column.:::*/
+.headBlock {
+    /* background-color: antiquewhite; */
+}
+
+/*:::step-6:content container.:::*/
+.headBlock h2 {
+    /* background-color: aqua; */
+    color: #0e1133;
+    font-family: "Alegreya Sans", sans-serif;;
+    font-size: 3.2rem;
+    font-style: italic;
+}
+
+/*:::step-4:2-row.:::*/
+.bestBody {
+    /* background-color: black; */
+}
+
+/*:::step-5:2row-1column.:::*/
+.bestBlock {
+    /* background-color: black; */
+      width: 70%;
+      margin: auto;
+}
+
+/*:::step-6:content container.:::*/
+.bestBlock p {
+    /* background-color: black; */
+    font-family: "Hind", sans-serif;
+    font-size: 1.6rem;
+    color: #53545b;
+    /* line-height: 3rem; */
+    text-align: justify;
+    
+
+}
+/*:::best company  code.:::*/
+
+/*:::questions code.:::*/
+/*:::6 steps for css.:::*/
+/*:::step-1:parent container.:::*/
+/*:::step-2:componet container.:::*/
+/*:::step-3:componet.:::*/
+/*:::step-4:row.:::*/
+/*:::step-5:column.:::*/
+/*:::step-6:content container.:::*/
+
+
+/*:::step-1:parent container.:::*/
+main {
+    /* background-color: black; */
+
+}
+
+/*:::step-1:already styled in style.css.:::*/
+
+/*:::step-2:componet container.:::*/
+.questionsContainer {
+    /* background-color: antiquewhite; */  
+}
+
+/*:::step-3:componet.:::*/
+
+.questions {
+    /* background-color: antiquewhite; */
+    background-color: #ffffff;
+    
+}
+
+/*:::step-4:1-row.:::*/
+.websiteBody {
+    /* background-color: antiquewhite; */
+   
+}
+
+/*:::step-5:1row-1column.:::*/
+.topBlock {
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+    margin-left: 22rem;
+    gap:7rem;
+   
+}
+
+/*:::step-6:content container.:::*/
+.topImg  img{
+    /* background-color: rgb(235, 136, 6); */
+    width: auto;
+    height: 15rem;
+    aspect-ratio: 2/5.5;
+}
+
+.title {
+    /* background-color: antiquewhite; */
+}
+
+.title h2 {
+    /* background-color: aqua; */
+    color: #0e1133;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    font-style: italic; 
+}
+
+/*:::step-4:1row-2column.:::*/
+.bottomBlock {
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* margin-right: 25rem; */
+    gap: 7rem;
+    width:70%;
+    margin: auto;
+}
+
+/*:::step-6:content container.:::*/
+.bottomtxt {
+    /* background-color: blue; */
+}
+
+.bottomtxt p {
+    /* background-color: blueviolet; */
+    font-family: "Hind", sans-serif;
+    font-size: 1.6rem;
+    color: #53545b;
+    text-align: justify;
+
+}
+
+.botmImg {
+    /* background-color: blueviolet; */
+}
+
+.botmImg img {
+    /* background-color: blueviolet; */
+    width: auto;
+    height: 15rem;
+    aspect-ratio: 5/5;
+}
+
+/*:::step-4:2-row.:::*/
+.webdesignBody {
+    /* background-color: brown; */
+}
+
+/*:::step-4:3-row.:::*/
+.webdevelopBody {
+    /* background-color: antiquewhite; */
+}
+
+/*:::step-4:4-row.:::*/
+.differentBody {
+    /* background-color: antiquewhite; */
+}
+
+/*::: these 3 rows same column name as 1row.:::*/
+/*:::questions code.:::*/
+
+/*:::bouquet code.:::*/
+/*:::6 steps for css.:::*/
+/*:::step-1:parent container.:::*/
+/*:::step-2:componet container.:::*/
+/*:::step-3:componet.:::*/
+/*:::step-4:row.:::*/
+/*:::step-5:column.:::*/
+/*:::step-6:content container.:::*/
+
+
+/*:::step-1:parent container.:::*/
+main{
+    /* background-color: black; */ 
+}
+/*:::step-1:already styled in style.css.:::*/
+
+/*:::step-2:componet container.:::*/
+.ourBouquetContainer{
+    background-color: rgb(255, 255, 255);
+}
+/*:::step-3:componet.:::*/
+
+.ourBouquet{
+     /* background-color: antiquewhite; */
+}
+
+/*:::step-4:1-row.:::*/
+.topBodyy{
+     /* background-color: antiquewhite; */
+    
+}
+/*:::step-5:1row-1column.:::*/
+.headBlock{
+     /* background-color: antiquewhite; */
+}
+
+/*:::step-6:content container.:::*/
+.headBlock h2{
+    /* background-color: aqua; */
+    color: #0e1133;
+    font-family: "Alegreya Sans", sans-serif;;
+    font-size: 3.2rem;
+    font-style: italic;
+}
+
+/*:::step-4:row-2.:::*/
+.bouquetBody{
+    /* background-color: aliceblue; */
+    padding: 0rem 13rem!important;
+}
+/*:::step-5:2row-column-1.:::*/
+.websiteBlock{
+    /* background-color: aquamarine; */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 4rem;
+}
+
+/*:::step-6:content container.:::*/
+.website{
+    background-color: #ffc107;
+    padding: 4rem 3rem;
+    border-radius: .6rem;
+    box-shadow: 0px 30px 40px 0px rgba(3, 24, 128, 0.2);
+}
+.bouquetCard{
+    /* background-color: rgb(225, 225, 11); */
+}
+.cardimg{
+    /* background-color: blue; */
+}
+.bouquettxt{
+    /* background-color: black; */
+}
+.bouquettxt h3 {
+   padding-top: 3rem;
+   padding-bottom: 2rem;
+   color: #0e1133;
+   font-family: 'Alegreya Sans', sans-serif;
+   font-weight: 800;
+   font-size: 2.2rem;
+   font-style: italic;
+}
+.bouquettxt p{
+    
+    opacity: 0.8;
+    line-height: 2.2rem;
+    font-size: 1.6rem;
+}
+ .website  p{
+    color: #ffffff;
+}
+.arrIcon{
+    width:4rem;
+    height: auto;
+    border-radius: 4rem;
+    padding: 1rem;
+    border: 1px solid #ffffff;
+    align-items: center;
+    text-align: center;
+    opacity: 0.5;
+    display: none;
+}
+
+
+/*:::step-5:2row-column-2.:::*/
+.developmentBlock{
+    /* background-color: aquamarine; */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 4rem;
+}
+/*:::step-6:content container.:::*/
+.development{
+    background-color: #e503f4;
+    padding: 4rem 4rem;
+    border-radius: .6rem;
+    box-shadow: 0px 30px 40px 0px rgba(3, 24, 128, 0.2);
+
+}
+ .development h3, p {
+    color: #ffffff;
+}
+
+/*:::step-5:2row-column-3.:::*/
+.e-commerceBlock{
+    /* background-color: aquamarine; */ 
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 4rem;
+}
+/*:::step-6:content container.:::*/
+.e-commerce{
+    background-color: #03a9f4;
+    padding: 4rem 4rem;
+    border-radius: .6rem;
+    box-shadow: 0px 30px 40px 0px rgba(3, 24, 128, 0.2);
+}
+.e-commerce  p{
+    color: #000000;
+}
+
+/*:::step-5:2row-column-4.:::*/
+.portalsBlock{
+    /* background-color: aquamarine; */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 4rem;
+}
+/*:::step-6:content container.:::*/
+.portals{
+    background-color: #03a9f4!important;
+    padding: 4rem 4rem;
+    border-radius: .6rem;
+    box-shadow: 0px 30px 40px 0px rgba(3, 24, 128, 0.2);
+}
+.portals  p{
+    color: #000000;
+}
+.porIcon{
+    filter: invert(100);
+}
+/*:::step-5:2row-column-5.:::*/
+.redesigningBlock{
+    /* background-color: aquamarine; */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 4rem;
+}
+/*:::step-6:content container.:::*/
+.redesigning{
+    background-color: #fd7e14;
+    padding: 4rem 4rem;
+    border-radius: .6rem;
+    box-shadow: 0px 30px 40px 0px rgba(3, 24, 128, 0.2);
+}
+.redesigning h3, p{
+    color: #ffffff;
+}
+.reIcon{
+    filter: invert(100);
+}
+/*:::step-5:2row-column-6.:::*/
+.marketingBlock{
+    /* background-color: aquamarine; */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 4rem;
+}
+/*:::step-6:content container.:::*/
+.marketing{
+    background-color: #ffcc00;
+    padding: 4rem 4rem;
+    border-radius: .6rem;
+    box-shadow: 0px 30px 40px 0px rgba(3, 24, 128, 0.2);
+}
+.marketing  p{
+    color: #000000;
+}
+/*:::step-6:content container block hovering.:::*/
+/* .websiteBlock,.developmentBlock,.e-commerceBlock,.portalsBlock,.redesigningBlock,.marketingBlock:hover{
+        transform:translateY(-10px) translate3d(0, -10px, 0);
+/* } */
+
+.bouquetBlock:hover{
+    transform:translateY(-10px) translate3d(0, -10px, 0);
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+}
+
+.bouquetBlock:hover .arrIcon{
+    bottom: 45px;
+    display: block;
+    opacity: 1;
+}
+.bouquetBlock:hover p{
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    display: none;
+}
+.arrIcon:hover{
+    width:4rem;
+    height: auto;
+    border-radius: 4rem;
+    padding: 1rem;
+    border: 1px solid #000000;
+    align-items: center;
+    text-align: center;
+    opacity: 0.5;
+    display: none;
+    color: #ffffff;
+}
+
+.arrIcon:hover i{
+    transform: translateX(5px);
+}
+/*:::bouquet code.:::*/
+
+/*:::recent works code.:::*/
+/*:::6 steps for css.:::*/
+/*:::step-1:parent container.:::*/
+/*:::step-2:componet container.:::*/
+/*:::step-3:componet.:::*/
+/*:::step-4:row.:::*/
+/*:::step-5:column.:::*/
+/*:::step-6:content container.:::*/
+
+
+/*:::step-1:parent container.:::*/
+main {
+    /* background-color: black; */
+
+}
+
+/*:::step-1:already styled in style.css.:::*/
+
+/*:::step-2:componet container.:::*/
+.recentWorksContainer {
+    background-color: rgb(255, 255, 255);
+}
+
+/*:::step-3:componet.:::*/
+
+.recentWorks {
+    /* background-color: antiquewhite; */
+}
+
+/*:::step-4:1-row.:::*/
+.topBody {
+    /* background-color: antiquewhite; */
+
+}
+
+/*:::step-5:1row-1column.:::*/
+.headBlock {
+    /* background-color: antiquewhite; */
+   
+    
+}
+
+/*:::step-6:content container.:::*/
+.headBlock h2 {
+    /* background-color: antiquewhite; */
+    color: #0e1133;
+    font-family: "Alegreya Sans", sans-serif;;
+    font-size: 3.2rem;
+    font-style: italic;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+/*:::step-4:2-row.:::*/
+.worksBody {
+    /* background-color: blueviolet; */
+    padding: 0rem 15rem!important;
+}
+
+/*:::step-5:1row-column.:::*/
+.worksBlock {
+    /* background-color: aliceblue; */
+    border:.1rem solid rgb(205, 200, 200);
+    border-radius: 1rem;
+    padding-top: 0rem ;
+    overflow: hidden;
+    box-shadow: 0px 20px 30px 0px rgba(3, 24, 128, 0.2);
+}
+.zappy{
+    background-color: #ffc107;
+    margin-left: 1rem;
+    margin-right: 1rem;
+ }
+ .eco{
+          background-color: #fd7e14;
+          margin-left: 1rem;
+          margin-right: 1rem;
+ }
+ .static{
+     background-color: #0d6efd;
+     margin-left: 1rem;
+     margin-right: 1rem;
+ }
+
+/*:::step-6:content container.:::*/
+.worksCard {
+    /* background-color: aquamarine; */
+}
+
+.worksImg {
+    /* background-color: rgb(253, 253, 253); */
+    /* border-radius: 3rem; */
+}
+
+.worksCard img {
+    /* background-color: beige; */
+    width: 100%;
+    height:auto;
+    aspect-ratio:4/2 ;
+    /* border-radius: 1rem; */
+}
+
+.workstxt {
+    /* background-color: brown; */
+    padding: 1.7rem;
+}
+
+.workstxt button {
+    /* background-color: aliceblue; */
+    border-radius: .5rem;
+    background-color: #ffffff;
+    font-size: 1.3rem;
+    border: none;
+    padding: 0rem 0.7rem;
+}
+
+.zap button{
+    color: #3d9af8;
+}
+.ec button{
+    color: #000000;
+}
+.st button{
+    color: rgb(248, 68, 188);
+}
+
+.workstxt h4 {
+    /* background-color: chocolate; */
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #0e1133;
+    font-weight: 700;
+    font-size: 2rem;
+    font-style: italic;
+    padding-top: 1rem;
+}
+
+.worksBlock :hover img {
+        transform: translateY(12px);
+}
+
+.zap button:hover{
+    color: #ffffff;
+    background-color: #3d9af8;
+}
+.ec button:hover{
+    color: #ffffff;
+    background-color: #000000;
+}
+.st button:hover{
+    color: rgb(255, 255, 255);
+   background-color: rgb(248, 68, 188);
+}
+/*:::recent works code.:::*/
+
+/*:::core data code.:::*/
+/*:::6 steps for css.:::*/
+/*:::step-1:parent container.:::*/
+/*:::step-2:componet container.:::*/
+/*:::step-3:componet.:::*/
+/*:::step-4:row.:::*/
+/*:::step-5:column.:::*/
+/*:::step-6:content container.:::*/
+
+
+/*:::step-1:parent container.:::*/
+main {
+    /* background-color: black; */
+
+}
+
+/*:::step-1:already styled in style.css.:::*/
+
+/*:::step-2:componet container.:::*/
+.coreDataContainer {
+    background-color: rgb(255, 255, 255);
+}
+
+/*:::step-3:componet.:::*/
+
+.coreData {
+    /* background-color: antiquewhite; */
+}
+
+/*:::step-4:1-row.:::*/
+.topBody {
+    /* background-color: antiquewhite; */
+
+}
+
+/*:::step-5:1row-1column.:::*/
+.headBlock {
+    /* background-color: antiquewhite; */
+}
+
+/*:::step-6:content container.:::*/
+.headBlock h2 {
+    /* background-color: antiquewhite; */
+}
+
+/*:::step-4:2-row.:::*/
+.dataBody {
+    /* background-color: brown; */
+    padding: 0rem 15rem!important;
+}
+
+/*:::step-5:2row-column.:::*/
+.dataBlock {
+    /* background-color: aquamarine; */
+}
+
+/*:::step-6:content container.:::*/
+.dataImg {
+    /* background-color: blueviolet; */
+}
+
+.dataimg {
+    /* background-color: aqua; */
+}
+
+.datatxt h2 {
+    /* background-color: blanchedalmond; */
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #0e1133;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.dataBlock p{
+    font-family: "Hind", sans-serif;
+    font-size: 1.6rem;
+    color: #000000;
+    line-height: 2.6rem;
+}
+/*:::core data code.:::*/
+
+/*:::details code.:::*/
+/*:::6 steps for css.:::*/
+/*:::step-1:parent container.:::*/
+/*:::step-2:componet container.:::*/
+/*:::step-3:componet.:::*/
+/*:::step-4:row.:::*/
+/*:::step-5:column.:::*/
+/*:::step-6:content container.:::*/
+
+
+/*:::step-1:parent container.:::*/
+main {
+    /* background-color: black; */
+}
+
+/*:::step-1:already styled in style.css.:::*/
+
+/*:::step-2:componet container.:::*/
+.kiranDetailContainer {
+    background-color: #ffffff;
+}
+
+/*:::step-3:componet.:::*/
+.kiranDetail {
+    /* background-color: antiquewhite; */
+}
+
+/*:::step-4:1-row.:::*/
+.detailBody {
+    /* background-color: antiquewhite; */
+}
+
+/*:::step-5:1row-1column.:::*/
+.faceBookBlock {
+    /* background-color: antiquewhite; */
+    padding: 5rem 5rem;
+    margin-bottom: 15rem;
+}
+
+/*:::step-6:content container.:::*/
+.toptitle {
+    /* background-color: aqua; */
+}
+
+.toptitle h2 {
+    /* background-color: aqua; */
+    color: #fd7e14;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 2.1rem;
+    font-style: italic;
+}
+
+.faceBookimg .fbimg {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2/1;
+}
+
+.faceBookimg .festimg {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+.testimonialBlock {
+    margin-bottom: 25rem;
+    padding: 5rem 5rem;
+}
+
+.testimonial p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 0 0 17px 0;
+    font-weight: 300;
+    color: #000000;
+    font-family: "Hind", sans-serif;
+}
+
+.clientName p {
+    font-family: "Hind", sans-serif;
+    font-size: 1.6rem;
+    color: #9c9c9d;
+}
+
+/*:::details code.:::*/
+.formBlock {
+    margin-bottom: 10rem;
+    /* padding: 1rem 1rem; */
+    width: 100%;
+    /* background-color: #000000; */
+    
+}
+.toptitle h2 {
+    /* background-color: aqua; */
+    color: #fd7e14;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 2.1rem;
+    font-style: italic;
+}
+
+.form {
+    background-color: #ffffff;
+    box-shadow: 0px 20px 30px 0px rgba(3, 24, 128, 0.2);
+    padding: 3rem 3rem;
+}
+form{
+    justify-content: flex-start !important;
+    text-align: left;
+}
+
+input,
+textarea {
+    border: .1rem solid #0099ff;
+    width: 100%;
+    /* height: 5rem; */
+    padding: 0.85rem 1rem;
+    border-radius: 1rem;
+    /* margin-top: 2rem; */
+    justify-content: flex-start !important;
+    text-align: left;
+    padding-left: 1rem;
+}
+textarea{
+    /* width: 30rem;
+    height: 10rem;*/
+    padding: 2rem 1rem; 
+}
+
+form p {
+    font-size: 1.6rem;
+    color: #000000;
+}
+
+span {
+    gap: 4rem
+}
+
+span input {
+    /* width: 22rem;
+    height: 5rem; */
+    padding: .85rem 2rem;
+    justify-content: left !important;
+    /* margin-left: -3rem; */
+}
+
+span p {
+    margin-top: 2rem;
+}
+input ,textarea{
+ text-align: start!important;
+}
+#verifytxt{
+    color:rgb(99, 97, 97);
+    /* background-color: #0099ff; */
+    padding-bottom: -4rem;
+}
+
+.reset {
+    background-color: rgb(221, 218, 218);
+    border: none;
+    padding: .1rem;
+    margin-top: 1rem;
+    color:rgb(99, 97, 97);
+}
+
+.submit {
+    margin-top: 1rem;
+    background: #0099ff;
+    color: #fff;
+    padding: .2rem 5.5rem;
+    line-height: 46px;
+    text-align: center;
+    border: none;
+    border-radius: 3rem;
+}
+
+
+form{
+    gap:2rem;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #ffc107; */
+}
+
+/*:::details code.:::*/
+
+
+/*:::clientele code.:::*/
+/*:::6 steps for css.:::*/
+/*:::step-1:parent container.:::*/
+/*:::step-2:componet container.:::*/
+/*:::step-3:componet.:::*/
+/*:::step-4:row.:::*/
+/*:::step-5:column.:::*/
+/*:::step-6:content container.:::*/
+
+
+/*:::step-1:parent container.:::*/
+main {
+    /* background-color: black; */
+
+}
+
+/*:::step-1:already styled in style.css.:::*/
+
+/*:::step-2:componet container.:::*/
+.ClienteleContainer {
+    background-color: rgb(255, 255, 255);
+}
+
+/*:::step-3:componet.:::*/
+
+.Clientele {
+    /* background-color: antiquewhite; */
+}
+
+/*:::step-4:1-row.:::*/
+.topBody {
+    /* background-color: antiquewhite; */
+    
+}
+
+/*:::step-5:1row-1column.:::*/
+.headBlock {
+    /* background-color: antiquewhite; */
+}
+
+/*:::step-6:content container.:::*/
+.headBlock h2 {
+    /* background-color: aqua; */
+}
+
+/*:::step-5:2row.:::*/
+.ClienteleBody {
+    /* background-color: black; */
+    padding: 0rem 18rem!important;
+}
+
+/*:::step-5:1row-1column.:::*/
+.ClienteleBlock {
+    /* background-color: black; */
+
+}
+
+/*:::step-6:content container.:::*/
+.Clientelelogo {
+    /* background-color: antiquewhite; */
+}
+
+.clientlogo {
+    /* /* background-color: antiquewhite; */
+}
+/*:::clientele code.:::*/
+
+/*:::footer code.:::*/
+/*:::6 steps for css.:::*/
+/*:::step-1:parent container.:::*/
+/*:::step-2:componet container.:::*/
+/*:::step-3:componet.:::*/
+/*:::step-4:row.:::*/
+/*:::step-5:column.:::*/
+/*:::step-6:content container.:::*/
+
+
+/*:::step-1:parent container.:::*/
+footer {
+    /* background-color: black; */
+
+}
+
+/*:::step-1:already styled in style.css.:::*/
+
+/*:::step-2:componet container.:::*/
+.footerContainer {
+    background-color: rgb(211, 206, 206);
+}
+
+/*:::step-3:componet.:::*/
+
+.footer {
+    /* background-color: antiquewhite; */
+}
+
+/*:::step-4:1-row.:::*/
+.footrLinksBody {
+    /* background-color: antiquewhite; */
+    padding: 0rem 15rem!important;
+  
+}
+
+/*:::step-5:1row-1column.:::*/
+.ftrlinksBlock {
+    /* background-color: antiquewhite; */
+    padding: 3rem 3rem;
+    padding-bottom: -10rem;
+}
+
+/*:::step-6:content container.:::*/
+.ftrlinksBlock h2 {
+    /* background-color: antiquewhite; */
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #0e1133;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 2.5rem;
+}
+
+.ftrlinks {
+    /* background-color: aqua; */
+}
+ li{
+    list-style-type: none!important;
+}
+.ftrlinks li,
+a {
+    color: #53545b;
+    text-decoration:none; 
+    font-size: 1.6rem;
+    line-height: 1.2;
+    font-family: ;
+    /* background-color: aqua; */
+}
+
+.linktxt {
+    /* background-color: aqua; */
+}
+
+.linktxt p {
+    /* background-color: aqua; */
+    font-family: "Hind", sans-serif;
+    font-size: 1.6rem;
+    color: #53545b;
+}
+.icons{
+    gap:1rem
+}
+.icons span {
+    /* background-color: aqua; */
+    width:4rem;
+    height: auto;
+    padding: .9rem;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    color:#ffffff;
+    align-items: center;
+    text-align: center;
+    
+
+}
+.fa-facebook-f{
+    background-color: #0139c8;
+}
+.fa-instagram{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.fa-linkedin-in{
+    background-color: #3d92fb;
+}
+
+.icons i {
+    /* background-color: aqua; */
+}
+
+/*:::step-4:2-row.:::*/
+.copyrtBody {
+    /* background-color: aqua; */
+    
+}
+
+/*:::step-5:2row-column.:::*/
+
+.copyrtBlock {
+    /* background-color: aqua; */
+    border-top: .1rem solid #ffffffd8;
+    opacity: 0.5;
+    gap:1rem;
+}
+
+/*:::step-6:content container.:::*/
+.copyrtBlock i {
+    /* background-color: aqua; */
+}
+
+.copyrtBlock p {
+    /* background-color: aqua; */
+    font-family: "Hind", sans-serif;
+    font-size: 1.6rem;
+    color: #53545b;
+    padding-top: 1rem;
+   
+}
+/*:::footer code.:::*/
+
+/*:::responsive design.:::*/
+
+/*:::small devices(landscape phones,upto 576px and below).:::*/
+/*:::responsive target code for row code( display:grid).:::*/
+
+@media(width<=576px) {
+
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    /*:::navBar code.:::*/
+
+
+    /*:::step-1:parent container.:::*/
+    header {}
+
+    /*:::step-1:already styled in style.css.:::*/
+
+    /*:::step-2:componet container.:::*/
+    .navContainer {
+        /* background-color: antiquewhite; */
+        /* background-color: black; */
+    }
+
+    /*:::step-3:componet.:::*/
+    .navBar {
+        /* background-color: antiquewhite; */
+    }
+
+    /*:::step-4: row.:::*/
+    .navBody {
+        /* background-color: antiquewhite; */
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+
+
+    }
+
+    /*:::step-5: column1.:::*/
+    .logoBlock {
+        /* background-color: antiquewhite; */
+    }
+
+    /*:::step-6:content container.:::*/
+    .firstlogo {
+        /* background-color: aqua; */
+    }
+
+    /* .logoimg{
+    width: 4rem;;
+    height: auto;
+    aspect-ratio: 1/1;   
+} */
+    .secondlogo {
+        /* background-color: azure; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: -.3rem !important;
+        margin-top: -1.4rem;
+    }
+
+    .logoImg {
+        width: auto;
+        height: 3.55rem;
+    }
+
+    /*:::step-5:1row-2column.:::*/
+    .linkBlock {
+        /* background-color: black; */
+        margin-right: 4rem;
+    }
+
+    /*:::step-6:content container.:::*/
+    .links {
+        /* background-color: black; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+        /* gap: 4.3rem; */
+        display: none;
+
+    }
+
+    .links li {
+        list-style-type: none;
+    }
+
+    .links i {
+        font-size: .9rem;
+    }
+
+    .wedo {
+        gap: .3rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .links li a {
+        text-decoration: none;
+        list-style-type: none;
+        color: #ffffff;
+        font-size: 1.61rem;
+        font-weight: 500;
+    }
+
+    .links li a:hover {
+        text-decoration: underline;
+
+    }
+
+    .links li a i:hover {
+        text-decoration: underline;
+    }
+
+    .active {
+        text-decoration: underline !important;
+        text-underline-offset: .5rem;
+
+    }
+
+    /*:::navBar code.:::*/
+
+    /*:::headerSection code.:::*/
+    /*:::6 steps for css.:::*/
+    /*:::step-1:parent container.:::*/
+    /*:::step-2:componet container.:::*/
+    /*:::step-3:componet.:::*/
+    /*:::step-4:row.:::*/
+    /*:::step-5:column.:::*/
+    /*:::step-6:content container.:::*/
+
+
+    /*:::step-1:parent container.:::*/
+    header {
+        /* background-color: black; */
+        position: relative;
+        width: 100%;
+        margin: auto;
+
+
+    }
+
+    header video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        background: cover !important;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    /*:::step-1:already styled in style.css.:::*/
+
+    /*:::step-2:componet container.:::*/
+    .heroContainer {
+        /* background-color: antiquewhite; */
+    }
+
+    /*:::step-3:componet.:::*/
+
+    .heroSection {
+        /* background-color: antiquewhite; */
+    }
+
+    /*:::step-4:1-row.:::*/
+    .heroBody {
+        /* background-color: antiquewhite; */
+
+    }
+
+    /*:::step-5:1row-1column.:::*/
+    .welcomeBlock {
+        /* background-color: antiquewhite; */
+        gap: 5rem;
+        margin-top: -5rem;
+        margin-left: .1rem;
+    }
+
+    /*:::step-6:content container.:::*/
+    /* .videoBg{
+  min-height: 2rem;
+} */
+
+    .video {
+        /* object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip; */
+    }
+
+    .video source {
+        /* background-color: aqua; */
+    }
+
+    .welImg {
+        /* background-color: aqua; */
+        animation: spin 10s infinite linear;
+    }
+
+    @keyframes spin {
+        50% {
+            rotate: 360deg;
+        }
+
+        100% {
+            rotate: -360deg;
+        }
+    }
+
+
+    .welimg {
+        /* background-color: aqua; */
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+
+
+    .welcometxt {
+        /* background-color: aqua; */
+    }
+
+    .welcometxt h1 {
+        /* background-color: aqua; */
+        font-size: 2rem;
+        color: #48c5ff;
+        font-family: "Alegreya Sans", sans-serif;
+        font-style: italic;
+        line-height: 2rem;
+        font-weight: 500;
+    }
+
+    /*:::step-5:row-2column.:::*/
+    .heroImgBlock {
+        /* background-color: black; */
+        margin-left: 5rem;
+        margin-top: -5rem;
+    }
+
+    /*:::step-6:content container.:::*/
+    .heroImg {
+
+        /* background-color: black; */
+    }
+
+    .heroImg img {
+        /* overflow-clip-margin: content-box;
+  overflow: hidden;
+  object-fit: cover; */
+        aspect-ratio: 6/.2;
+        height: 35rem;
+        /* background-color: rgb(207, 174, 174); */
+    }
+
+    .location {
+        margin-left: -1rem;
+        margin-top: -22rem;
+    }
+
+    .location img {
+        /* background-color: black; */
+        height: 10rem;
+        transform: translate(200%);
+        animation: jump 2s infinite ease-in-out;
+        aspect-ratio: 88/3;
+
+    }
+
+    @keyframes jump {
+
+        0%,
+        100% {
+            transform: translate(-100%, 0);
+            /* Initial and final position */
+        }
+
+        50% {
+            transform: translate(-100%, 40px);
+            /* Move 200px down */
+        }
+    }
+
+    .locationImg {
+        /* background-color: black; */
+
+    }
+
+    /*:::headerSection code.:::*/
+
+    /*:::best company code.:::*/
+
+    /*:::6 steps for css.:::*/
+    /*:::step-1:parent container.:::*/
+    /*:::step-2:componet container.:::*/
+    /*:::step-3:componet.:::*/
+    /*:::step-4:row.:::*/
+    /*:::step-5:column.:::*/
+    /*:::step-6:content container.:::*/
+
+
+    /*:::step-1:parent container.:::*/
+    main {
+        /* background-color: black; */
+
+    }
+
+    /*:::step-1:already styled in style.css.:::*/
+
+    /*:::step-2:componet container.:::*/
+    .bestCompanyContainer {
+        background-color: #ffffff;
+    }
+
+    /*:::step-3:componet.:::*/
+
+    .bestCompany {
+        /* background-color: antiquewhite; */
+    }
+
+    /*:::step-4:1-row.:::*/
+    .topBody {
+        /* background-color: antiquewhite; */
+
+    }
+
+    /*:::step-5:1row-1column.:::*/
+    .headBlock {
+        /* background-color: antiquewhite; */
+    }
+
+    /*:::step-6:content container.:::*/
+    .headBlock h2 {
+        /* background-color: aqua; */
+        color: #0e1133;
+        font-family: "Alegreya Sans", sans-serif;
+        ;
+        font-size: 3rem;
+        font-style: italic;
+        font-weight: 800;
+    }
+
+    /*:::step-4:2-row.:::*/
+    .bestBody {
+        /* background-color: black; */
+    }
+
+    /*:::step-5:2row-1column.:::*/
+    .bestBlock {
+        /* background-color: black; */
+
+    }
+
+    /*:::step-6:content container.:::*/
+    .bestBlock p {
+        /* background-color: black; */
+        font-family: "Hind", sans-serif;
+        font-size: 1.6rem;
+        color: #53545b;
+        text-align: justify;
+        line-height: 2.5rem;
+    }
+
+    /*:::best company  code.:::*/
+
+    /*:::questions code.:::*/
+    /*:::6 steps for css.:::*/
+    /*:::step-1:parent container.:::*/
+    /*:::step-2:componet container.:::*/
+    /*:::step-3:componet.:::*/
+    /*:::step-4:row.:::*/
+    /*:::step-5:column.:::*/
+    /*:::step-6:content container.:::*/
+
+
+    /*:::step-1:parent container.:::*/
+    main {
+        /* background-color: black; */
+
+    }
+
+    /*:::step-1:already styled in style.css.:::*/
+
+    /*:::step-2:componet container.:::*/
+    .questionsContainer {
+        /* background-color: antiquewhite; */
+    }
+
+    /*:::step-3:componet.:::*/
+
+    .questions {
+        /* background-color: antiquewhite; */
+        background-color: #ffffff;
+        width: 100%;
+        margin: auto;
+    }
+
+    /*:::step-4:1-row.:::*/
+    .websiteBody {
+        /* background-color: antiquewhite; */
+    }
+
+    /*:::step-5:1row-1column.:::*/
+    .topBlock {
+        /* background-color: antiquewhite; */
+        display: flex;
+        align-items: center;
+        text-align: start;
+        justify-content: flex-start;
+        /* margin-left: -42rem; */
+        gap: 3rem;
+        margin: auto;
+    }
+
+    /*:::step-6:content container.:::*/
+    .topImg img {
+        /* background-color: rgb(235, 136, 6); */
+        width: auto;
+        /* height: 15rem; */
+        aspect-ratio: 2/5.5;
+    }
+
+    .title {
+        /* background-color: antiquewhite; */
+    }
+
+    .title h2 {
+        /* background-color: aqua; */
+        color: #0e1133;
+        font-family: 'Alegreya Sans', sans-serif;
+        font-weight: 800;
+        font-size: 3rem;
+        font-style: italic;
+    }
+
+    .diff {
+        /* gap:7rem; */
+        margin-left: 6rem;
+    }
+
+    /*:::step-4:1row-2column.:::*/
+    .bottomBlock {
+        /* background-color: aquamarine; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        /* margin-right: 25rem; */
+        gap: 4rem;
+        /* width:100%; */
+        margin: auto;
+    }
+
+    /*:::step-6:content container.:::*/
+    .bottomtxt {
+        /* background-color: blue; */
+    }
+
+    .bottomtxt p {
+        /* background-color: blueviolet; */
+        font-family: "Hind", sans-serif;
+        font-size: 1.6rem;
+        color: #000000;
+        text-align: justify;
+        /* font-weight: 800; */
+    }
+
+    .botmImg {
+        /* background-color: blueviolet; */
+    }
+
+    .botmImg img {
+        /* background-color: blueviolet; */
+        width: auto;
+        /* height: 15rem; */
+        aspect-ratio: 13/5;
+    }
+
+    /*:::step-4:2-row.:::*/
+    .webdesignBody {
+        /* background-color: brown; */
+    }
+
+    /*:::step-4:3-row.:::*/
+    .webdevelopBody {
+        /* background-color: antiquewhite; */
+    }
+
+    /*:::step-4:4-row.:::*/
+    .differentBody {
+        /* background-color: antiquewhite; */
+    }
+
+    /*::: these 3 rows same column name as 1row.:::*/
+
+    /*:::questions code.:::*/
+
+    /*:::bouquet code.:::*/
+    .bouquetBlock {
+        /* margin-left: -2rem;; */
+        padding-bottom: 4rem;
+    }
+
+    .bouquettxt h3 {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        color: #0e1133;
+        font-family: 'Alegreya Sans', sans-serif;
+        font-weight: 800;
+        font-size: 3rem;
+        font-style: italic;
+    }
+
+    .bouquettxt p {
+
+        opacity: 0.8;
+        line-height: 2.2rem;
+        font-size: 1.6rem;
+        text-align: justify;
+    }
+
+    .bouquetBody {
+        /* background-color: aliceblue; */
+        padding: 0rem 13rem !important;
+        width: 100%;
+        margin: auto;
+        margin-left: -2rem;
+    }
+
+    /*:::bouquet code.:::*/
+
+    /*:::recent works code.:::*/
+    /*:::6 steps for css.:::*/
+    /*:::step-1:parent container.:::*/
+    /*:::step-2:componet container.:::*/
+    /*:::step-3:componet.:::*/
+    /*:::step-4:row.:::*/
+    /*:::step-5:column.:::*/
+    /*:::step-6:content container.:::*/
+
+
+    /*:::step-1:parent container.:::*/
+    main {
+        /* background-color: black; */
+
+    }
+
+    /*:::step-1:already styled in style.css.:::*/
+
+    /*:::step-2:componet container.:::*/
+    .recentWorksContainer {
+        background-color: rgb(255, 255, 255);
+    }
+
+    /*:::step-3:componet.:::*/
+
+    .recentWorks {
+        /* background-color: antiquewhite; */
+
+    }
+
+    /*:::step-4:1-row.:::*/
+    .topBody {
+        /* background-color: antiquewhite; */
+
+
+    }
+
+    /*:::step-5:1row-1column.:::*/
+    .headBlock {
+        /* background-color: antiquewhite; */
+
+
+    }
+
+    /*:::step-6:content container.:::*/
+    .headBlock h2 {
+        /* background-color: antiquewhite; */
+        color: #0e1133;
+        font-family: "Alegreya Sans", sans-serif;
+        ;
+        font-size: 3.2rem;
+        font-style: italic;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    /*:::step-4:2-row.:::*/
+    .worksBody {
+        /* background-color: blueviolet; */
+        padding: 0rem 7rem !important;
+        width: 100%;
+        margin: auto;
+        gap: 3rem;
+    }
+
+    /*:::step-5:1row-column.:::*/
+    .worksBlock {
+        /* background-color: aliceblue; */
+        border: .1rem solid rgb(205, 200, 200);
+        border-radius: 1rem;
+        padding-top: 0rem;
+        overflow: hidden;
+        box-shadow: 0px 20px 30px 0px rgba(3, 24, 128, 0.2);
+    }
+
+    .zappy {
+        background-color: #ffc107;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .eco {
+        background-color: #fd7e14;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .static {
+        background-color: #0d6efd;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    /*:::step-6:content container.:::*/
+    .worksCard {
+        /* background-color: aquamarine; */
+    }
+
+    .worksImg {
+        /* background-color: rgb(253, 253, 253); */
+        /* border-radius: 3rem; */
+    }
+
+    .worksCard img {
+        /* background-color: beige; */
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4/2;
+        /* border-radius: 1rem; */
+    }
+
+    .workstxt {
+        /* background-color: brown; */
+        padding: 1.7rem;
+    }
+
+    .workstxt button {
+        /* background-color: aliceblue; */
+        border-radius: .5rem;
+        background-color: #ffffff;
+        font-size: 1.3rem;
+        border: none;
+        padding: 0rem 0.7rem;
+    }
+
+    .zap button {
+        color: #3d9af8;
+    }
+
+    .ec button {
+        color: #000000;
+    }
+
+    .st button {
+        color: rgb(248, 68, 188);
+    }
+
+    .workstxt h4 {
+        /* background-color: chocolate; */
+        font-family: 'Alegreya Sans', sans-serif;
+        color: #0e1133;
+        font-weight: 700;
+        font-size: 2rem;
+        font-style: italic;
+        padding-top: 1rem;
+    }
+
+    .worksBlock :hover img {
+        transform: translateY(12px);
+    }
+
+    .zap button:hover {
+        color: #ffffff;
+        background-color: #3d9af8;
+    }
+
+    .ec button:hover {
+        color: #ffffff;
+        background-color: #000000;
+    }
+
+    .st button:hover {
+        color: rgb(255, 255, 255);
+        background-color: rgb(248, 68, 188);
+    }
+
+    /*:::recent works code.:::*/
+
+    /*:::core data code.:::*/
+    .dataBody {
+        /* background-color: brown; */
+        width: 100%;
+        margin: auto;
+        padding: 0rem 15rem !important;
+    }
+
+    /*:::core data code.:::*/
+
+    /*:::details code.:::*/
+    /*:::6 steps for css.:::*/
+    /*:::step-1:parent container.:::*/
+    /*:::step-2:componet container.:::*/
+    /*:::step-3:componet.:::*/
+    /*:::step-4:row.:::*/
+    /*:::step-5:column.:::*/
+    /*:::step-6:content container.:::*/
+
+
+    /*:::step-1:parent container.:::*/
+    main {
+        /* background-color: black; */
+    }
+
+    /*:::step-1:already styled in style.css.:::*/
+
+    /*:::step-2:componet container.:::*/
+    .kiranDetailContainer {
+        background-color: #ffffff;
+    }
+
+    /*:::step-3:componet.:::*/
+    .kiranDetail {
+        /* background-color: antiquewhite; */
+    }
+
+    /*:::step-4:1-row.:::*/
+    .detailBody {
+        /* background-color: antiquewhite; */
+        width: 100%;
+        margin: auto;
+        gap: 0rem;
+    }
+
+    /*:::step-5:1row-1column.:::*/
+    .faceBookBlock {
+        /* background-color: antiquewhite; */
+        padding: 0rem 0rem;
+        margin-bottom: 0rem;
+        margin-left: 5rem;
+    }
+
+    /*:::step-6:content container.:::*/
+    .toptitle {
+        /* background-color: aqua; */
+    }
+
+    .toptitle h2 {
+        /* background-color: aqua; */
+        color: #fd7e14;
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 2.1rem;
+        font-style: italic;
+    }
+
+    .faceBookimg .fbimg {
+        width: 80%;
+        height: auto;
+        aspect-ratio: 2/1;
+    }
+
+    .faceBookimg .festimg {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+
+    .testimonialBlock {
+        margin-bottom: 5rem;
+        padding: 5rem 5rem;
+    }
+
+    .testimonial p {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        margin: 0 0 17px 0;
+        font-weight: 300;
+        color: #000000;
+        font-family: "Hind", sans-serif;
+    }
+
+    .clientName p {
+        font-family: "Hind", sans-serif;
+        font-size: 1.6rem;
+        color: #9c9c9d;
+    }
+
+    /*:::details code.:::*/
+    .formBlock {
+        margin-left: -1rem !important;
+        /* padding: 1rem 1rem; */
+        width: 100%;
+        justify-content: center;
+        /* background-color: #000000; */
+
+    }
+
+    .toptitle h2 {
+        /* background-color: aqua; */
+        color: #fd7e14;
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 2.1rem;
+        font-style: italic;
+        text-align: left;
+    }
+
+    .form {
+        background-color: #ffffff;
+        box-shadow: 0px 20px 30px 0px rgba(3, 24, 128, 0.2);
+        padding: 3rem 3rem;
+    }
+
+    form {
+        justify-content: flex-start !important;
+        text-align: left;
+    }
+
+    input,
+    textarea {
+        border: .1rem solid #0099ff;
+        width: 100%;
+        /* height: 5rem; */
+        padding: 0.85rem 1rem;
+        border-radius: 1rem;
+        /* margin-top: 2rem; */
+        justify-content: flex-start !important;
+        text-align: left;
+        padding-left: 1rem;
+    }
+
+    textarea {
+        /* width: 30rem;
+    height: 10rem;*/
+        padding: 2rem 1rem;
+    }
+
+    form p {
+        font-size: 1.6rem;
+        color: #000000;
+    }
+
+    span {
+        gap: 4rem
+    }
+
+    span input {
+        /* width: 22rem;
+    height: 5rem; */
+        padding: .85rem 2rem;
+        justify-content: left !important;
+        /* margin-left: -3rem; */
+    }
+
+    span p {
+        margin-top: 2rem;
+    }
+
+    input,
+    textarea {
+        text-align: start !important;
+    }
+
+    #verifytxt {
+        color: rgb(99, 97, 97);
+        /* background-color: #0099ff; */
+        padding-bottom: -4rem;
+    }
+
+    .reset {
+        background-color: rgb(221, 218, 218);
+        border: none;
+        padding: .1rem;
+        margin-top: 1rem;
+        color: rgb(99, 97, 97);
+    }
+
+    .submit {
+        margin-top: 1rem;
+        background: #0099ff;
+        color: #fff;
+        padding: .2rem 5.5rem;
+        line-height: 46px;
+        text-align: center;
+        border: none;
+        border-radius: 3rem;
+    }
+
+
+    form {
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        /* background-color: #ffc107; */
+    }
+
+    /*:::details code.:::*/
+    /*:::details code.:::*/
+
+    /*:::clientele code.:::*/
+    .ClienteleBody {
+        /* background-color: black; */
+        padding: 0rem 18rem !important;
+        grid-template-columns: 1fr;
+        gap: 12rem;
+    }
+
+    /*:::clientele code.:::*/
+
+    /*:::footer code.:::*/
+    .copyrtBody {
+        /* background-color: aqua; */
+        grid-template-columns: 1fr;
+        display: flex;
+        gap: 1rem
+    }
+
+    .copyrtBlock {
+        display: block;
+        padding-top: 2rem;
+    }
+
+    /*:::footer code.:::*/
+}
+
+/*:::medium devices(tablets ,upto 768px and above).:::*/
+@media(width>=577px) and (width<=768px) {}
+
+/*::: large devices(laptops  ,upto 992px and above).:::*/
+@media(width>=769px) and (width<=992px) {}
+
+/*:::x-large devices(largedesktops ,upto 1200px and above).:::*/
+@media(width>=993px) and (width<=1200px) {}
+
+/*:::xx-large devices(largedesktops ,upto 1400px and above).:::*/
+@media(width>=1200px) {}
